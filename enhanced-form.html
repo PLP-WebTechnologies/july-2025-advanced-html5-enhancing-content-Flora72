@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img.jpg" type="image/x-icon" />
+  <title>WEEK2 | Enhanced HTML</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul style="list-style-type: none;">
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="lists">
+      <h3>Q1 - Months</h3>
+      <ol>
+        <li>January</li>
+        <li>February</li>
+        <li>March</li>
+      </ol>
+
+      <h3>Q2 - Months</h3>
+      <ul type="square">
+        <li>April</li>
+        <li>May</li>
+        <li>June</li>
+      </ul>
+
+      <h2>Definition Lists</h2>
+      <dl>
+        <dt>CSS - Cascading Style Sheets</dt>
+        <dd>Style sheets are used to provide presentational suggestions for structured documents marked up in HTML.</dd>
+      </dl>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <img src="img.jpg" alt="B&W City Skyline with Bridge" width="500" height="500" />
+
+      <h2>Video</h2>
+      <video width="500" height="300" controls>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video.
+      </video>
+
+      <h2>Music Audio</h2>
+      <audio width="200" height="200" controls>
+        <source src="Lindsey_Stirling_-_O_Come_Emmanuel_CeeNaija.com_.mp3" type="audio/mpeg" />
+        Your browser does not support audio playback.
+      </audio>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Registration Number</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>22/07645</td>
+            <td>Jared</td>
+            <td>BIT</td>
+            <td>Nairobi</td>
+          </tr>
+          <tr>
+            <td>23/04545</td>
+            <td>Kris</td>
+            <td>BSD</td>
+            <td>Kitengela</td>
+          </tr>
+          <tr>
+            <td>24/76859</td>
+            <td>Penny</td>
+            <td>BISF</td>
+            <td>Kisumu</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="location" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here..." required />
+        <br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email here..." required />
+        <br /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age here..." required min="1" />
+        <br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" required />
+        <br /><br />
+
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" name="gender" id="male" value="Male" required />
+          <label for="male">Male</label><br />
+          <input type="radio" name="gender" id="female" value="Female" />
+          <label for="female">Female</label><br />
+          <input type="radio" name="gender" id="other" value="Other" />
+          <label for="other">Other</label>
+        </fieldset>
+        <br /><br />
+
+        <label for="phonenumber">Phone number:</label>
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="+254712345678" required />
+        <br /><br />
+
+        <label for="cv">Upload CV:</label>
+        <input type="file" name="cv" id="cv" required />
+        <br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Florence Ndinda | &copy; 2025</p>
+  </footer>
+</body>
+</html>
+
